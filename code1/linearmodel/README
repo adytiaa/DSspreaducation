@@ -1,0 +1,17 @@
+To start the first implementation where the user ranking are absent, 
+we try to follow the simple by using linear model for forming the compatibility score
+
+d(Tf_i,Sf_i) is the compatibility element between two features(mainly numeric) and different kind of metics can be used for evaluations
+
+for example Pearson correlation or cosine similarity
+
+s(T_n,S_m) = /sigma _i d_i, which is the compatibilty score between peope from tutors and tutees set for simiplicty
+
+Later s(T_n,S_m) can be a weighted approach of d(Tf_i,Sf_i) or a function of d(Tf_i,Sf_i)
+
+
+for finally ranking or rating element a linear model is constructed  with 
+
+r_(T_n,S_m) = /beta_1 s(T_n,S_m) + screen factors (content-based)
+
+Testing prototype in python impelmentation 
